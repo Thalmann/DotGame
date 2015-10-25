@@ -28,11 +28,16 @@ def game():
     turn = player_1
     dots_count = 13
     while(True):
+        print_dots(dots_count)
         if dots_count <= 1:
-            # Game over
+            lost(turn)
             break
-        move = read_move('some_name')
+        move = read_move(turn)
         dots_count -= move
+        if turn is player_1:
+            turn = player_2
+        elif turn is player_2:
+            turn = player_1
 
 
 game()

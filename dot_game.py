@@ -1,4 +1,11 @@
 
+def setup():
+    print('Player 1 enter your name: ')
+    player_1 = input()
+    print('Player 2 enter your name: ')
+    player_2 = input()
+    return player_1, player_2
+
 def print_dots(dots_count):
     print('Number of dots left: {0}'.format(dots_count))
 

@@ -10,7 +10,7 @@ def print_dots(dots_count):
     print('Number of dots left: {0}'.format(dots_count))
 
 def read_move(player_name):
-    print('{0}: How many dots do you want to remove? (3, 2 or 1)'.format(player_name))
+    print('{0}, how many dots do you want to remove? (3, 2 or 1)'.format(player_name))
     while(True):
         try:
             move = int(input())

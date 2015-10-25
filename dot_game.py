@@ -1,3 +1,8 @@
+def print_rules():
+    print('The rules:')
+    print('There are 13 dots and each player takes turn to remove 1, 2 or 3 dots.')
+    print('The first player that removes a dot and reaches zero or below has lost.')
+    print()
 
 def setup():
     print('Player 1 enter your name: ')
@@ -24,6 +29,7 @@ def lost(player_name):
     print('{0} you have lost.'.format(player_name))
 
 def game():
+    print_rules()
     player_1, player_2 = setup()
     turn = player_1
     dots_count = 13

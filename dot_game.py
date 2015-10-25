@@ -20,6 +20,8 @@ def read_move(player_name):
             return move
         print('You have to choose: 1, 2 or 3')
 
+def lost(player_name):
+    print('{0} you have lost.'.format(player_name))
 
 def game():
     dots_count = 13

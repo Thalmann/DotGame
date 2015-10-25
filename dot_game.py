@@ -24,6 +24,8 @@ def lost(player_name):
     print('{0} you have lost.'.format(player_name))
 
 def game():
+    player_1, player_2 = setup()
+    turn = player_1
     dots_count = 13
     while(True):
         if dots_count <= 1:
